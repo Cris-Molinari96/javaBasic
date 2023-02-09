@@ -86,26 +86,18 @@ public class Main {
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
         // Start your code here
-        double sandwichWeight = Double.valueOf(2.5);
-        boolean sandwichOrder = true ;
-        double soupWeightOne = Double.valueOf(10);
-        boolean soupOrderOne = true ;
-        double soupWeight = Double.valueOf(1);
-        boolean soupOrder = true ;
-        if(sandwichOrder) {
-            yourMealScore = sandwichWeight * 5;
-            System.out.println(yourMealScore); // 12.5
-        }
-        if (soupOrderOne){
-            yourMealScore = soupWeightOne * 3;
-            System.out.println(yourMealScore); // 30
-        }
-        if(soupOrder){
-            if(soupWeight < 5){
-                soupWeight = 5 ;
-            }
-            yourMealScore = soupWeight * 3;
-            System.out.println(yourMealScore); // 15
+
+        switch (mealType){
+            case "sandwich":
+                yourMealScore = weight * 5;
+
+            case"soup":
+                if(weight == 10 ){
+                    yourMealScore = weight *  3 ;
+                }else if (yourMealScore < 5){
+                    yourMealScore = 5 ;
+                }
+                break;
         }
 
         // End it here
