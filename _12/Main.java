@@ -30,7 +30,45 @@ public class Main {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
         // Start your code here
+
+/** SWITCH STATMENT
+
         String strOne = "Java runs on over 2 billion devices";
+        String strTwo = "+31 2 58765446";
+        String strThree = "hello world";
+        int maxScore = 20 ;
+
+        switch (text){
+            case  "Java runs on over 2 billion devices":
+                if(strOne.length() > maxScore) {
+                    if (strOne.contains("a")) {
+                    yourScore = strOne.length();
+                    yourScore = maxScore - 5 ;
+                    }
+                }
+
+            case "+31 2 58765446":
+                if (strTwo.equals(strTwo.toLowerCase())){
+                    yourScore = strTwo.length() +10 ;
+                    if (yourScore > 20 ){
+                        yourScore *= 2 ;
+                    }
+                }
+
+            case "hello world":
+                if(strThree.equals(strThree.toLowerCase())) {
+                    yourScore = strThree.length() + 10;
+                    if (yourScore > 20) {
+                        yourScore *= 2;
+                    }
+                }
+        }
+
+*/
+
+/** IF STATMENT
+
+         String strOne = "Java runs on over 2 billion devices";
         String strTwo = "+31 2 58765446";
         String strThree = "hello world";
 
@@ -62,7 +100,10 @@ public class Main {
 
             System.out.println(yourScore); // 42
         }
-        // End it here
+
+*/
+
+// End it here
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourScore);
         if (expectedScore != yourScore) {
