@@ -132,11 +132,12 @@ public class Main {
                 yourMealScore = weight * 5;
 
             case"soup":
-                if(weight == 10){
+                if(weight >= 10){
                     yourMealScore = weight *  3 ;
-                }else if (yourMealScore < 5){
-                    yourMealScore = 5 ;
+                }else if (weight < 5){
+                    yourMealScore = weight * 5 ;
                 }
+
                 break;
         }
 
