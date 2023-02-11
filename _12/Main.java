@@ -31,7 +31,7 @@ public class Main {
         double yourScore = 0;
         // Start your code here
 
-/** SWITCH STATMENT
+
 
         String strOne = "Java runs on over 2 billion devices";
         String strTwo = "+31 2 58765446";
@@ -64,7 +64,6 @@ public class Main {
                 }
         }
 
-*/
 
 /** IF STATMENT
 
@@ -133,7 +132,7 @@ public class Main {
                 yourMealScore = weight * 5;
 
             case"soup":
-                if(weight == 10 ){
+                if(weight == 10){
                     yourMealScore = weight *  3 ;
                 }else if (yourMealScore < 5){
                     yourMealScore = 5 ;

@@ -1,6 +1,7 @@
 package javaBasics._13;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,22 +24,25 @@ public class Main {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         //Write your code here
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
-        numbers.add(6);
-        numbers.add(7);
-        numbers.add(8);
 
-        System.out.println(numbers.get(0));
-
-        numbers.remove(0);
-        numbers.remove(0);
-        numbers.remove(0);
-
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
+        numbers.add((int)  (Math.random() * 100) + 1 );
         System.out.println(numbers);
+
+        numbers.remove(0);
+        System.out.println(numbers);
+        numbers.remove(0);
+        System.out.println(numbers);
+        numbers.remove(0);
+        System.out.println(numbers);
+
+
     }
 
     /**

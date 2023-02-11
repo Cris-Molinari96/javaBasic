@@ -25,17 +25,33 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1 - Comfortable clothes:");
 
-        double temperatureInCelsius = 25;
+        double temperatureInCelsius = 19;
         double isWarmTemperatureInCelsius = 20;
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
-        boolean wearingShorts = true;
+        boolean wearingShorts = false;
+
 
         // Write your code here
-        if((isWarm)&&(wearingShorts)){
-            System.out.println("Confortable clothes");
-        }else{
-            System.out.println("Unconfortable clothes");
+        if((isWarm)&&(wearingShorts) || (isWarm != true) && (wearingShorts != true) ){
+            System.out.println("Comfortable clothes");
+
+// MI RESTITUISCE UNCOMFORTABLE CLOTHES SOLO  QUANDO UNA DELLE DUE COND. è FALSE O TRUE ??
+// ERA QUESTO CHE VOLEVI DIRMI NELLA CORREZIONE --> SPERO DI SI ?? :D
+        }else if ((isWarm != true) ^ (wearingShorts != true)){
+            System.out.println("Uncomfortable clothes");
+        } else{
+            System.out.println("Not understand");
         }
+
+    /**
+        if((isWarm)&&(wearingShorts)){
+            System.out.println("Comfortable clothes");
+        }else if ((isWarm) ^ (wearingShorts)){
+            System.out.println("Comfortable clothes ^^");
+        }else {
+            System.out.println("Uncomfortable clothes");
+        }
+     */
     }
 
     /**
@@ -47,7 +63,7 @@ public class Main {
      *    Write 1 if statement that checks all of these, print "Come in" if they meet the condition
      *    or "stay out" if they don't.
      */
-    private static void exercise2() {
+    private static void exercise2(){
         System.out.println("\nExercise 2 - Club Bouncer:");
         String shoeType = "fancy";
 

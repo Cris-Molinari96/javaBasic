@@ -35,19 +35,19 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        double remainingMoney = 15.0;
+        double remainingMoney = 5.0;
         double lunchCost = 5.0;
 
         // Your if statement here
-        if(!(remainingMoney >= lunchCost)){
+        if(remainingMoney >= lunchCost){
             System.out.println("Lunch Time");
         }else{
             System.out.println("You go hungry today");
         }
 
-        double moneyRemaingAfter3Lunch = remainingMoney % lunchCost;
+        double moneyRemainingAfter3Lunch = remainingMoney % lunchCost;
 
-        if(!(moneyRemaingAfter3Lunch >= lunchCost)){
+        if(moneyRemainingAfter3Lunch >= lunchCost){
             System.out.println("Lunch Time");
         }else{
             System.out.println("You go hungry today");
@@ -68,7 +68,7 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        double ourDouble = 3.5;
+        double ourDouble = 1.5;
         //Write your code here
         double checkNumber = 2.5;
         if(ourDouble > checkNumber ){
@@ -78,7 +78,7 @@ public class Main {
             if(ourDouble > checkNumber){
             System.out.println(" Numero ancora inferiore: "+ checkNumber);
             }else if(ourDouble == checkNumber){
-            System.out.println(ourDouble + " Numero uguale: "+ checkNumber);
+            System.out.println(ourDouble + " Numero uguale:  "+ checkNumber);
             }else{
             System.out.println(ourDouble + " Numero maggiore: "+ checkNumber);
             }
@@ -100,7 +100,7 @@ public class Main {
     private static void exercise4() {
         System.out.println("\nExercise 4:");
 
-        int employeeAge = 17;
+        int employeeAge = 26;
 
         //Write your if statement here
         if(employeeAge >= 65){
