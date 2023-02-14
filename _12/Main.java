@@ -130,15 +130,17 @@ public class Main {
         switch (mealType){
             case "sandwich":
                 yourMealScore = weight * 5;
-
-            case"soup":
+           case"soup":
                 if(weight >= 10){
                     yourMealScore = weight *  3 ;
+
                 }else if (weight < 5){
                     yourMealScore = weight * 5 ;
-                }
+                    //ystem.out.println("wight = "+ weight  + " * 5 "+ "  = " + yourMealScore );
 
+                }
                 break;
+
         }
 
         // End it here

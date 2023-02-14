@@ -78,5 +78,6 @@ public class Main {
      */
     public static void exercise3Bonus() {
         // Non l'ho capito.... :(
+
     }
 }
