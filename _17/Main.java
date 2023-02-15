@@ -46,12 +46,12 @@ public class Main {
      *    short = -32,768 to 32,768
      *    byte = -127 to 127
      *
-     *    2a: Someone's age                                                                                         --> byte
+     *    2a: Someone's age                                                                                         --> short
      *    2b: The age of a baby in months                                                                 --> byte
-     *    2c: Money in a hedgefund in euros                                                            --> float
-     *    2d: Price of a good in euros on amazon.com                                          --> short
+     *    2c: Money in a hedgefund in euros                                                            --> long
+     *    2d: Price of a good in euros on amazon.com                                          --> float
      *    2e: The exact weight of an apple measured by scientific equipment --> double
-     *    2f: The number of kilometers from any 2 places in the world              --> long
+     *    2f: The number of kilometers from any 2 places in the world              --> short
      */
 
     /**
