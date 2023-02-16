@@ -24,15 +24,12 @@ public class Main {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         //Write your code here
+Random random = new Random();
+for(int i = 0; i < 8; i++){
+    int newRandom = random.nextInt(50);
+    numbers.add( newRandom);
+}
 
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
-        numbers.add((int)  (Math.random() * 100) + 1 );
         System.out.println(numbers);
 
         numbers.remove(0);

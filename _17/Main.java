@@ -95,8 +95,6 @@ public class Main {
         return date;
 
     }
-
-    // * print y birthday --> come posso gestire un return ?
         static void isYourBirthday(LocalDate date, LocalDate compareDate){
 
             if((date.getDayOfMonth() == compareDate.getDayOfMonth()) && (date.getMonth() == compareDate.getMonth()) ){

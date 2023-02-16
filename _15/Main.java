@@ -22,17 +22,14 @@ public class Main {
         int yearsPast = 0;
         double interestGainedThisYearEuros = 0;
 
-       /* while (currentInvestmentValueEuros < 100_000) {
+        while (yearsPast <= 5 || currentInvestmentValueEuros <= 15000 ) {
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
 
-            if((yearsPast > 15) || ( interestGainedThisYearEuros > 15_000) ){
-                return;
-            }
-        }*/
+        }
     }
 
     /**
